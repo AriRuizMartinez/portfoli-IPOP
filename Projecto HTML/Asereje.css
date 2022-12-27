@@ -1,0 +1,373 @@
+html {
+   font-family: papyrus;
+   height: 100%;
+ }
+
+ body {
+   height: 100%;
+   width: 100%;
+   margin: 0%;
+   padding: 0%;
+ }
+
+ header {
+   grid-area: header;
+   font-size: 800%;
+   text-shadow: 6px 6px black;
+ }
+
+ nav {
+   grid-area: nav;
+   font-size: 250%;
+   align-content: center;
+   padding-left: 4px;
+ }
+
+ section {
+   grid-area: main;
+ }
+
+ aside {
+   grid-area: aside;
+   font-size: 3rem;
+   padding: 0%;
+ }
+ img{
+    width: 100%;
+    height: 100%;
+}
+
+ footer {
+   grid-area: footer;
+   font-size: 2rem;
+ }
+
+ h1 {
+   font-size: 3rem;
+   font-weight: normal;
+ }
+ p{
+    font-size: 2rem;
+ }
+ ul{
+  list-style: none;
+ }
+ .container {
+   display: grid;
+   grid-template-areas:
+     'header header header'
+     'nav main aside'
+     'footer footer footer';
+   height: 100%;
+   grid-template-columns: 15% 46.7% 38.3%;
+   grid-template-rows: 25% 65% 10%;
+ }
+ .personajes{
+  display: grid;
+  grid-template-areas: 
+  'header nav nav'
+  'main main aside'
+  'footer footer footer';
+  grid-template-columns: 33.3% 33.4% 33.3%;
+  grid-template-rows: 20% 150% 10%;
+  height: 100%;
+   width: 100%;
+   margin: 0%;
+   padding: 0%;
+}
+.pantalla{
+  display: grid;
+  grid-template-areas: 
+  'header nav nav'
+  'main main aside'
+  'footer footer footer';
+  grid-template-columns: 33.3% 33.4% 33.3%;
+  grid-template-rows: 20% 5500px 10%;
+  height: 100%;
+   width: 100%;
+   margin: 0%;
+   padding: 0%;
+}
+.trama{
+  display: grid;
+  grid-template-areas: 
+  'header nav nav'
+  'main main aside'
+  'section section section'
+  'footer footer footer';
+  grid-template-columns: 34.8% 33.6% 31.6%;
+  grid-template-rows: 20% 51% 27% 10%;
+  height: 100%;
+   width: 100%;
+   margin: 0%;
+   padding: 0%;
+}
+.votacion{
+  display: grid;
+  grid-template-areas: 
+  'header nav nav'
+  'aside main main'
+  'footer footer footer';
+  grid-template-columns: 33.3% 33.4% 33.3%;
+  grid-template-rows: 20% 70% 10%;
+  height: 100%;
+   width: 100%;
+   margin: 0%;
+   padding: 0%;
+}
+.char{
+  background-color: turquoise;
+    color: #0b470f;
+    padding: 20px;
+  text-align: center;
+  grid-area: main;
+}
+.boulevard{
+  background-color: turquoise;
+    color: #0b470f;
+    padding: 20px;
+  text-align: center;
+  grid-area: section;
+}
+ header, footer, section{
+  padding: 20px;
+  text-align: center;
+  
+}
+header,footer{
+  align-items:center;
+  background-color: #0b470f;
+  color: turquoise; 
+}
+nav, aside, section{
+    background-color: turquoise;
+    color: #0b470f;
+}
+li{
+    padding: 15px;
+    margin-bottom: 65px;
+}
+a{
+  color: #0b470f;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(19, 198, 19);
+    text-shadow: 1px 1px #0b470f;
+}
+.enlace:hover{
+    color: rgb(18, 109, 165);
+    text-shadow: 1.5px 1.5px turquoise;
+}
+.pequenio{
+  font-size: 600%;
+  text-shadow: 4px 4px black;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+.tamanio{
+font-size: small;
+}
+li span{
+  position: relative;
+  left: -10px;
+}
+.colorver{
+  background-color: #0b470f;
+  color: turquoise;
+}
+.largo{
+  font-size: 300%;
+}
+.margen{
+  margin-right: 70px;
+}
+.little{
+  height: 150px;
+  width: 150px;
+}
+td{
+  font-size: xx-large;
+}
+.taula{
+  width: 75%;
+}
+.asereje{
+  width: 150px;
+}
+tr{
+  height: 25%;
+}
+.half{
+  height: 650px;
+}
+.fondo{
+  width: 100%;
+  height: 1000px;
+  border: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+.up{
+  height: 1000px;
+  border: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+.last{
+  height: 500px;
+  border: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+.centrar{
+  height: 662.400px;
+}
+.imagen{
+  background-image: url("Gif.webp");
+  background-size: contain;
+  overflow: hidden;
+}
+.animacion:hover{
+  animation: muerte 2s linear forwards;
+}
+.grande{
+  font-size: xx-large;
+}
+.flexy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formul{
+  background-color: turquoise;
+  border: 2px solid #0b470f;
+}
+button{
+  background-color: #0b470f;
+  color: turquoise;
+}
+.motion{
+  width: 300px;
+  height: 300px;
+  animation: linear infinite;
+  animation-name: libertario;
+  animation-duration: 8s;
+}
+@keyframes libertario{
+  0% { transform: translate(10px, 10px);}
+  25% {transform: translate(340px, 10px);}
+  50% {transform: translate(340px, 370px);}
+  75% {transform: translate(10px, 370px);}
+  100% {transform: translate(10px, 10px);}
+}
+@keyframes muerte{
+  0% {opacity: 100%;}
+  50% {opacity: 50%;}
+  100% {opacity: 0%;} 
+}
+@media (max-width: 1200px) {
+  header{
+    font-size: 5em;
+  }
+  nav, h1, p, footer{
+    font-size: 20px;
+  }
+  .container{
+    grid-template-areas: 
+    'header'
+    'nav'
+    'main'
+    'footer';
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 75px 300px 150px;
+    width: 100%;
+  }
+  .personajes{
+    grid-template-areas: 
+    'header'
+    'nav'
+    'main'
+    'footer';
+    grid-template-columns: 100%;
+    grid-template-rows: 180px 100px 1500px 100px;
+    width: 100%;
+  }
+  .pantalla{
+    grid-template-areas: 
+    'header'
+    'nav'
+    'aside'
+    'footer';
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 75px 400px 150px;
+    width: 100%;
+  }
+  .votacion{
+    grid-template-areas: 
+    'header'
+    'nav'
+    'main'
+    'footer';
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 80px 400px 80px;
+    width: 100%;
+  }
+  .trama{
+    grid-template-areas: 
+    'header'
+    'nav'
+    'main'
+    'section'
+    'footer';
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 80px 1100px 700px 80px;
+    width: 100%;
+  }
+  .pequenio{
+    font-size: 3em;
+  }
+  .largo{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+  }
+  .margen{
+    margin-right: 15px;
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+  }
+  li{
+    margin-right: 25px;
+    margin-left: 1px;
+    padding: 0px;
+    margin-bottom: 0px;
+  }
+  .taula{
+    width: 150px;
+  }
+  td{
+    font-size: medium;
+  }
+  .centrar{
+    height: 10px;
+  }
+  .up{
+    height: 50px;
+    font-size: large;
+  }
+  .last{
+    height: 50px;
+    font-size: large;
+  }
+  .oculto{
+    display: none;
+  }
+  
+}
